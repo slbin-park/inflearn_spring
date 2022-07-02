@@ -1,0 +1,55 @@
+src
+- main
+
+- test
+테스트 코드들과 관련된 소스들이 들어감
+
+
+build.gradle
+sourceCompatibility -> wkqk qjwus
+
+gradl에
+Dependencies 에 의존관계가 있음
+
+spring-boot-starter-web
+    spring-boot-starter-tomcat: 톰캣 (웹서버)
+    spring-webmvc: 스프링 웹 MVC
+
+spring-boot-starter-thymeleaf: 타임리프 템플릿 엔진(View)
+
+spring-boot-starter(공통): 스프링 부트 + 스프링 코어 + 로깅
+    spring-boot
+        spring-core
+    spring-boot-starter-logging
+        logback, slf4j
+
+spring-boot-starter-test
+    junit: 테스트 프레임워크
+    mockito: 목 라이브러리
+    assertj: 테스트 코드를 좀 더 편하게 작성하게 도와주는 라이브러리
+    spring-test: 스프링 통합 테스트 지원
+
+./gradlew clean
+하면 빌드 초기화됨
+
+command + N 누르면 게터 세터 만들수 있음
+
+스프링에서는 객체가 반환되면
+json 방식으로 리턴을 해준다.
+
+soutv 자동완성
+
+테스트는 시작 순서를 보장안해줌
+실행할때마다 초기화를 해줘야함
+
+커맨드 옵션 브이 리턴을 해줌 전체 (선택을해야함)
+
+자바 8에 추가된 Optinal 
+여기서 제공해주는 ifPresent 를 사용하면 null 을 확인해주는
+if문을 줄일수 있음
+
+
+컨트롤 + T 를 누르면 리팩토링
+이걸로 구현한 코드를 함수로 바꿀수있음
+
+테스트는 한글로 바꿔도 괜찮다
