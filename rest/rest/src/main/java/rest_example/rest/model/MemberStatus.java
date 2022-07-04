@@ -1,2 +1,5 @@
-package rest_example.rest.model;public class MemberStatus {
+package rest_example.rest.model;
+
+public enum MemberStatus {
+    ACTIVE,DEACTIVATED
 }
