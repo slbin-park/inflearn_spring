@@ -6,9 +6,9 @@ src
 
 
 build.gradle
-sourceCompatibility -> wkqk qjwus
+sourceCompatibility -> 자바 버전
 
-gradl에
+gradle에
 Dependencies 에 의존관계가 있음
 
 spring-boot-starter-web
