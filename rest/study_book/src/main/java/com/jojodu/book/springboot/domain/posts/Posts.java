@@ -1,10 +1,14 @@
 package com.jojodu.book.springboot.domain.posts;
 
+import com.jojodu.book.springboot.domain.BaseTimeEntity;
+import com.jojodu.book.springboot.web.dto.PostsResponseDto;
+import com.jojodu.book.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.transaction.Transactional;
 
 @Getter
 @NoArgsConstructor
@@ -13,7 +17,7 @@ import javax.persistence.*;
 // 테이블과 링크될 클래스임을 나타냄
 // 기본값으로 카멜케이스 으름은 _으로 테이블 이름을 매칭
 // SalesManager -> slaes_manager
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     // PK필드임
@@ -39,4 +43,11 @@ public class Posts {
         this.content = content;
         this.author = author;
     }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
+
 }
